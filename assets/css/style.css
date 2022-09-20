@@ -1,0 +1,479 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+html{
+	scroll-behavior: smooth;
+	font-family: "Lato", sans-serif;
+}
+.main{
+
+}
+.clear{
+	clear: both;
+}
+.text-white{
+	color: #fff !important;
+}
+.row{
+	margin: 0 -8px;
+}
+.row::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.col{
+	float: left;
+	padding: 0 8px;
+}
+.col-third{
+	width: 33.3333%;
+}
+.col-half{
+	width: 50%;
+}
+.col-full{
+	width: 100%;
+}
+.text-center{
+	text-align: center !important;
+}
+.mt-16{
+	margin-top: 16px;
+}
+
+
+
+	/* --Main-- */
+.header{
+	background-color: #000;
+	height: 46px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	right: 0;
+		/*-- dòng nào tab ra là dc thêm vào khi đang chỉnh responsive --*/
+}
+
+ul#nav, ul.subnav{
+	list-style: none;
+}
+#nav >li{
+	display: inline-block;
+}
+#nav li{
+	position: relative;
+	
+}
+#nav > li > a{
+	color: #FFF;
+	text-transform: uppercase;
+}
+#nav li a{
+	line-height: 46px;
+	padding: 0px 22px;
+	display: block;
+}
+#nav li:hover .subnav{
+	display: block;
+}
+
+#nav > li:hover > a{
+	background-color: #ccc;
+	color: #000;
+}
+
+#nav .subnav{
+	display: none;
+	position: absolute;
+	top: 46px;
+	left: 0 ;
+	background-color: #FFF;
+	box-shadow: 0 0 10px rgba(0,0,0,0.8);
+	min-width: 160px;
+}
+#nav .subnav a{
+	color: #000;
+	font-family: "Lato", sans-serif;
+	padding: 0 16px;
+	line-height: 38px;
+
+}
+#nav .subnav li:hover a{
+	background-color: #ccc;
+	color: #000;
+}
+ /*nếu 2 selector giống thuộc tính thì có thể:
+ selector1, selector2{...} | vd:  .a, .b{...}*/
+ #nav{
+ 	display: inline-block;
+ }
+
+ .header .menu-mobile-btn{		/*-- // --*/
+ 	position: absolute;
+ 	top: 0;
+ 	right: 0;
+	display: none;
+}
+
+ .header .menu-mobile-btn, 		/*-- // --*/
+.header .search-btn {
+ 	float: right;
+ 	padding: 0 24px;
+ 	
+ }
+ .header .menu-icon,			/*-- // --*/
+.header .search-icon{
+	color: #fff;
+ 	line-height: 46px;
+ 	font-size: 18px;
+}
+
+.header .search-btn:hover{
+	cursor: pointer;
+	background-color: #f44336;
+}
+
+	.header .menu-mobile-btn:hover {			/*-- // --*/
+		background-color: #ccc;
+	}
+	.menu-mobile-btn:hover .menu-icon{			/*-- // --*/
+			color: #000;
+	}
+
+		/*----------------------Done header----------------------------*/
+
+.slider{
+ 	margin-top: 46px;
+ 	padding-top: 50%;
+ 	background-image: url('../img/slider1.jpg');
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	position: relative;
+}
+.text-slider{
+	color: /*#f44336*/ #fff;
+	position: absolute;
+	bottom: 47px;
+	text-align: center;
+	/*left: 50%;
+	transform: translateX(-50%); hoặc*/
+	width: 100%; 	/*căn giữa element có thuộc tính position: */
+
+}
+
+	/*---------------------Done slider---------------------------------*/
+
+.content{
+	
+}
+.section{
+	padding: 64px 16px;
+		max-width: 100%; /*//*/
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto; /*căn giữa element có thuộc tính width: */
+
+}
+.content-head{
+	text-align: center;
+	font-weight: 400;
+	font-size: 30px;
+	margin-bottom: 25px; 
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+.content-mid{
+	text-align: center;
+	font-style: italic;
+	margin-bottom: 25px;
+	font-size: 15px;
+	opacity: 0.6;
+}
+		
+	/*------------------------Done phần chung------------------------*/
+
+.content-last{
+	text-align: justify;
+	font-size: 14.8px;
+	line-height: 1.4;
+}
+
+ .team-section{
+	padding: 32px 0;
+
+}
+
+.content .name{
+	margin: 16px 0;
+	font-size: 15px;
+}
+.content .img{
+	border-radius: 4px;
+	width: 60%;
+}
+
+	/*----------------------------Done The Band-------------------------*/
+
+.backgroud-tour{
+	background-color: #000;
+}
+.date{
+	background-color: #fff;
+}
+.date li{
+	padding: 8px 16px;
+	color: #757575;
+	list-style: none;
+	border-bottom: 1px solid #ccc;
+}
+.status-off{
+	color: #fff;
+	background-color: #f44336;
+	padding: 3px 8px;
+	margin-left: 16px;
+}
+.status-on{
+	float: right;
+	background-color: #000;
+	color: #fff;
+	font-size: 15px;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	line-height: 24px;
+	margin-right: 16px;
+	margin-top: -2px;
+	padding: 0 8px; /*hoặc text-align: center;*/
+}
+	/*part*/
+
+.tour{
+	padding: 16px 0 32px;
+}
+
+/*.tour-ticket{ 		đã xóa: từng ở dòng 86 95 104;
+	width: 33.33333%;
+	padding-bottom: 15px;
+}*/
+
+.img-location{
+	width: 100%;
+	display: block;
+}
+.img-location:hover{
+	opacity: 0.6;
+}
+.info-location > p{
+	margin: 17px 0;
+	font-size: 15px;
+	font-family: "Lato", sans-serif;
+	line-height: 1.3;
+}
+.info-location{
+	background-color: #fff;
+	padding: 0.2px 16px;
+}
+.button-buy{
+	display: inline-block;
+	font-size: 15px;
+	padding: 11px 16px;
+	margin-bottom: 16px;
+	background-color: #000;
+	color: #fff;
+	border: none;
+}
+.button-buy:hover{
+	cursor: pointer;
+	background-color: #ccc;
+	color: #000;
+}
+
+	/*---------------------------Done The Tour date----------------------*/
+ 
+.contact{
+	margin: 45px 0 32px; 
+}
+.info-contact{
+	font-size: 18px;
+	line-height: 1.5;
+}
+.info-contact i{
+	width: 30px;
+	display: inline-block;
+}
+.info-contact a{
+	color: #87c7ff;
+	opacity: 0.8;
+}
+.info-contact a:hover{
+	opacity: 1;
+}
+
+.form-contact{
+	font-size: 15px;
+}
+.text-box{
+	padding: 10px;
+	font-size: 15px;
+	border: 1px solid #ccc;
+	width: 100%;
+	margin: 8px 0;
+	outline-color: #a989a1;
+}
+.form-submit-btn{
+	background-color: #000;
+	color: #fff;
+	font-size: 15px;
+	padding: 11px 15px;
+	margin-top: 8px ;
+	border: none;
+	float: right;
+}  /* -- 2 button buy-tickets và submit-bnt giống nhau css có 
+	thể để thành 1 class dùng chung và sửa phần margin cho hợp lí --*/
+.form-submit-btn:hover{
+	color: #000;
+	background-color: #ccc;
+	cursor: pointer;
+}
+
+	/*---------------------Done Contact------------------------------------*/
+
+
+.map-section img{
+	width: 100%;
+	filter: grayscale(50%);
+	display: block;
+}
+
+	/*----------------------Done Map--------------------------------*/
+	
+.footer{
+	padding: 64px 16px;
+	text-align: center;
+	background-color:  #f1f1f1;
+
+}
+.footer a{
+	color: #636363;
+	font-size: 24px;
+
+}
+.footer a:hover{
+	opacity: 0.6;
+}
+.footer p{
+	color: #636363;
+	margin: 15px 0;
+	font-size: 15px;
+}
+.footer p a{
+	font-size: 15px;
+	color: #636363;
+	text-decoration: underline;
+}
+
+	/*-----------------------Done Main----------------------------*/
+	
+	
+	/*modal buy tickets*/
+.modal.open{
+	display: flex;
+}
+
+.modal{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.4);
+	align-items: center;
+	justify-content: center;
+	display: none;
+}
+.modal-container{
+	background-color: #fff;
+	width: 900px;
+	max-width: calc(100% - 40px);
+	min-height: 200px;
+	position: relative;
+	animation: modalMove ease 0.6s;
+}
+.modal-close{
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	padding: 15px;
+}
+.modal-close:hover{
+	color: #000;
+	background-color: #ccc;
+	cursor: pointer;
+}
+.modal-head{
+	background-color: #009688;
+	text-align: center;
+	font-size: 30px;
+	padding: 47px 16px;
+	color: #fff;
+	letter-spacing: 7.5px;
+}
+.modal-body{
+	padding: 16px;
+}
+.modal-lable{
+	display: block;
+	font-size: 15px;
+	margin-bottom: 12px;
+	font-weight: 600;
+}
+.modal-input{
+	width: 100%;
+	padding: 11px;
+	margin-bottom: 22px; 
+}
+.modal-button{
+	background-color: #009688;
+	border: none;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 600;
+	display: inline-block;
+	text-align: center;
+	padding: 16px;
+	margin: 5px 0 10px;
+	width: 100%;
+}
+.modal-button:hover{
+	color: #000;
+	background-color: #ccc;
+	cursor: pointer;
+}
+.modal-footer p{
+		text-align: right;
+		margin: 15px 16px 35px;
+}
+
+
+@keyframes modalMove{
+	from{
+		opacity: 0;
+		transform: translateY(-140px);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+/*--------------------------------------------*/
+	/*-- css Responsive --
+	PC: >= 1024px
+	tablet: [ 740, 1024 )
+	mobile: < 740px		*/
+
