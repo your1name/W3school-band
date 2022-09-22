@@ -1,1 +1,1 @@
-# W3school-band.github.io
+# W3school-band
